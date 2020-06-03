@@ -95,9 +95,24 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item {{ Request::is('siswa') ? 'active' : '' }}">
-    <a class="nav-link" href="{{ url('siswa') }}">
-        <i class="fas fa-fw fa-table"></i>
-        <span>Siswa</span></a>
+        <a class="nav-link" href="{{ url('siswa') }}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Siswa</span>
+        </a>
+    </li>
+
+    <li class="nav-item {{ Request::is('kelas') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ url('kelas') }}">
+            <i class="fas fa-school"></i>
+            <span>Siswa</span>
+        </a>
+    </li>
+
+    <li class="nav-item {{ Request::is('hobi') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ url('hobi') }}">
+            <i class="fas fa-heart"></i>
+            <span>Hobi</span>
+        </a>
     </li>
 
     <!-- Divider -->

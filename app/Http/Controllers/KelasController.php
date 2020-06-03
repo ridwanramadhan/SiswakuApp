@@ -20,7 +20,7 @@ class KelasController extends Controller
     }
 
     //simpan dalam request
-    public function store(KelasRequest $request) {
+    public function store(Request $request) {
         Kelas::create($request->all());
         // Flash input / alert
         Session::flash('flash_message', 'Kelas Berhasill Disimpan...');
@@ -31,16 +31,18 @@ class KelasController extends Controller
         return view('kelas.edit', compact('kelas'));
     }
 
-    // public function update($id, Request $request) {
-    public function update(Kelas $kelas, KelasRequest $request) {
+    public function update($id, Request $request) {
+    // public function update(Kelas $kelas, KelasRequest $request) {
+        $kelas = Kelas::findOrFail($id);
         $kelas -> update ($request -> all());
         // Flash input / alert
         Session::flash('flash_message', 'Kelas Berhasill Diupdate...');
         return redirect ('kelas');
     }
 
-    //public function destroy($id){
-    public function destroy(Kelas $kelas) {
+    public function destroy($id){
+    // public function destroy(Kelas $kelas) {
+        $kelas = Kelas::findOrFail($id);
         $kelas -> delete();
         // Flash input / alert
         Session::flash('flash_message', 'kelas Berhasill Dihapus...');
