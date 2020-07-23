@@ -15,3 +15,29 @@
 - generate -> php artisan migrate
 end -> php artisan db:seed
 Finish
+
+# SiswakuApp
+
+SiswakuApp adalah sebuah website untuk melakukan pendataan siswa. Terdapat 3 side menu yaitu siswa, kelas, dan hobi
+
+### Technology i have used in this app :
+  1.  Laravel 5.8
+  2.  Bootstrap 4
+  3.  Jquery
+  4.  DataTables
+
+#### [Demo Website]
+
+Please visit the following link to try my website [link](http://siswakuapp.galleryku.my.id/)
+
+### [Screenshoot Website]
+
+<img src="/ss/Screenshot (170).png" width="960" height="540">
+
+<img src="/ss/Screenshot (171).png" width="960" height="540">
+
+<img src="/ss/Screenshot (172).png" width="960" height="540">
+
+<img src="/ss/Screenshot (173).png" width="960" height="540">
+
+<img src="/ss/Screenshot (174).png" width="960" height="540">
