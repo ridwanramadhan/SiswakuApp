@@ -104,7 +104,7 @@
     <li class="nav-item {{ Request::is('kelas') ? 'active' : '' }}">
         <a class="nav-link" href="{{ url('kelas') }}">
             <i class="fas fa-school"></i>
-            <span>Siswa</span>
+            <span>Kelas</span>
         </a>
     </li>
 
